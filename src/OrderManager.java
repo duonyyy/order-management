@@ -18,6 +18,7 @@ public class OrderManager {
     }
 
     public List<Order> searchByProductId(String productId) {
+        System.out.println("Searching for product: " + productId);
         return orders.stream()
                 .filter(order -> order.getProductId().equals(productId))
                 .collect(Collectors.toList());
