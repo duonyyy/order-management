@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class OrderManager {
     private List<Order> orders;
@@ -14,5 +15,11 @@ public class OrderManager {
 
     public List<Order> getOrders() {
         return new ArrayList<>(orders);
+    }
+
+    public List<Order> searchByProductId(String productId) {
+        return orders.stream()
+                .filter(order -> order.getProductId().equals(productId))
+                .collect(Collectors.toList());
     }
 }
