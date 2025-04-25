@@ -1,0 +1,22 @@
+Ignore NetBeans project files
+
+nbproject/ build/ dist/
+
+Ignore compiled Java files
+
+*.class
+
+Ignore IDE-specific files
+
+*.iml .idea/
+
+Ignore build-related files
+
+build.xml manifest.mf
+
+
+# Giải thích:
+# nbproject/, build/, dist/: Các thư mục do NetBeans tạo.
+# *.class: Bỏ qua file bytecode Java.
+# *.iml, .idea/: Bỏ qua file cấu hình của IntelliJ.
+# build.xml, manifest.mf: File cấu hình dự án NetBeans.
